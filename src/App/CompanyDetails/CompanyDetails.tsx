@@ -33,11 +33,16 @@ const CompanyDetailsContainer = styled.div`
   padding: 2rem 2rem;
   h2 {
     font-size: 2.5rem;
-    margin: 3rem 0 0.8rem 0;
+    margin: 2rem 0 0.8rem 0;
   }
 
   @media ${BREAKPOINTS.LG} {
     padding: 3rem 5rem;
+
+    h2 {
+      font-size: 2.5rem;
+      margin: 3rem 0 0.8rem 0;
+    }
   }
 `;
 
