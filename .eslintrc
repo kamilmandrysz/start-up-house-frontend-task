@@ -3,6 +3,9 @@
     "browser": true,
     "es6": true
   },
+  "globals": {
+    "JSX": true
+  },
   "parser": "babel-eslint",
   "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended", "prettier/react"],
   "plugins": ["babel", "import"],

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const HeaderContainer = styled.div`
   padding: 2rem;
-  border-bottom: 1px solid #000;
+  background-color: #fff;
 
   h2 {
     margin: 0;
