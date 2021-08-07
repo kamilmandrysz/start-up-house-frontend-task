@@ -2,4 +2,6 @@ export const COLORS = {
   LIGHT_BLUE: '#4460F7',
   DARK_BLUE: '#2140E8',
   BACKGROUND: '#F2F2F2',
+  BORDER_COLOR: '#C3C3C3',
+  LIGHT1: '#9194A5',
 };

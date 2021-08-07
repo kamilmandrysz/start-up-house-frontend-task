@@ -7,7 +7,7 @@ import Result from 'App/StocksPortfolioDashboard/components/SearchSection/compon
 const SearchResultsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 3rem;
 `;
 
 const SearchResults = () => {
@@ -15,8 +15,6 @@ const SearchResults = () => {
 
   return (
     <SearchResultsContainer>
-      <p>Search result</p>
-
       {searchCompanies.map((e) => {
         return <Result key={e['1. symbol']} symbol={e['1. symbol']} name={e['2. name']} />;
       })}

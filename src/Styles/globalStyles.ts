@@ -39,23 +39,33 @@ const GlobalStyle = createGlobalStyle`
     }
 
     box-sizing: border-box;
- }   
+    }   
 
- body,html {
-    margin: 0;
-    padding: 0;
-  }
+    body,html {
+        margin: 0;
+        padding: 0;
+    }
 
-  body {
-    min-width: 325px;
-    font-family: "Nunito", sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
+    body {
+        min-width: 325px;
+        font-family: "Nunito", sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
 
 
-  button {
-      font: 400 1rem "Nunito", sans-serif;
-  }
+    button {
+        font: 400 1rem "Nunito", sans-serif;
+    }
+
+    .animation-appear {
+        opacity: 0;
+    }
+
+    .animation-appear.animation-appear-active {
+        opacity: 1;
+        transition: opacity 300ms;
+    }
+
 `;
 
 export default GlobalStyle;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { TextField, InputAdornment } from '@material-ui/core';
+import { TextField, InputAdornment, withStyles } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
 import API from 'Lib/axios';
@@ -9,6 +9,21 @@ import { useAppDispatch } from 'Hooks/redux-hooks';
 import { setSearchCompaniesAction } from 'Store/stocksPortfolio/actions';
 
 import { API_KEY } from 'config';
+
+import { COLORS } from 'Styles/colors';
+
+const CssTextField = withStyles({
+  root: {
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: COLORS.BORDER_COLOR,
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: COLORS.DARK_BLUE,
+      },
+    },
+  },
+})(TextField);
 
 const Search = () => {
   const dispatch = useAppDispatch();
@@ -29,9 +44,10 @@ const Search = () => {
   }, [searchTerm, dispatch]);
 
   return (
-    <TextField
+    <CssTextField
       label="Search"
       InputProps={{
+        style: { backgroundColor: '#fff' },
         startAdornment: (
           <InputAdornment position="start">
             <SearchIcon />
