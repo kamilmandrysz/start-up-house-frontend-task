@@ -45,6 +45,7 @@
     "react/jsx-props-no-spreading": 0,
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn"
   }
 }

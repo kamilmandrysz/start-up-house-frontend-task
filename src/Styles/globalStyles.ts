@@ -37,11 +37,24 @@ const GlobalStyle = createGlobalStyle`
         url("../Assets/fonts/Nunito-Bold.ttf") format("ttf");
     font-display: swap;
     }
+
+    box-sizing: border-box;
  }   
+
+ body,html {
+    margin: 0;
+    padding: 0;
+}
 
   body {
     min-width: 325px;
     font-family: "Nunito", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  button {
+      font: 400 1rem "Nunito", sans-serif;
   }
 `;
 
